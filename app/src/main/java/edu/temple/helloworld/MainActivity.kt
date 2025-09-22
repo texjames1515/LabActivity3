@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         
         findViewById<Button>(R.id.clickMeButton).setOnClickListener {
-            val nameText = displayTextView.findViewById<EditText>(R.id.nameEditText)
+            val nameText = findViewById<EditText>(R.id.nameEditText)
             if(nameText.text.isNotEmpty()) {
                 displayTextView.text = "Hello, ${findViewById<EditText>(R.id.nameEditText).text}"
             }else{
